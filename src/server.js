@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable import/no-extraneous-dependencies */
 // mengimpor dotenv dan menjalankan konfigurasinya
@@ -6,8 +7,8 @@ require('dotenv').config();
 const Hapi = require('@hapi/hapi');
 const Jwt = require('@hapi/jwt');
 const Inert = require('@hapi/inert');
-const ClientError = require('./exceptions/ClientError');
 const path = require('path');
+const ClientError = require('./exceptions/ClientError');
 
 // notes
 const notes = require('./api/notes');
