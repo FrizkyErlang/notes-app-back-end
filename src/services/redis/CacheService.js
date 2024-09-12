@@ -1,5 +1,6 @@
+/* eslint-disable no-underscore-dangle */
 const redis = require('redis');
- 
+
 // add REDIS_SERVER=localhost in .env
 class CacheService {
   constructor() {
@@ -28,7 +29,7 @@ class CacheService {
 
   delete(key) {
     return this._client.del(key);
-   }
+  }
 }
- 
+
 module.exports = CacheService;
